@@ -17,7 +17,7 @@ if not os.path.exists(Config.compiled):
     os.mkdir(Config.compiled)
 
 for uncompiledScript in os.listdir(Config.uncompiled):
-    command = ['wsl',f'{Config.compiler}', f'{Config.uncompiled}/{uncompiledScript}', '-o', f'{Config.compiled}/{uncompiledScript[:-2]}']
+    command = ['wsl',f'{Config.compiler}', f'{Config.uncompiled}/{uncompiledScript}', '-o', f'{Config.compiled}/{uncompiledScript[:-2]}','-lm']
     p = subprocess.run(command)
     print(p)
 if not os.path.exists(Config.inputData):
