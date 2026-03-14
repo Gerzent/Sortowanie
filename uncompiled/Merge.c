@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+long long comparisons=0;
 void merge(int arr[],int leftIndex,int midlle,int rightIndex) {
     int i=0,j=0,k=leftIndex;
 
@@ -21,6 +21,7 @@ void merge(int arr[],int leftIndex,int midlle,int rightIndex) {
     j = 0;
 
     while (i < lenghtOfLeft && j < lenghtOfRight) {
+        comparisons++;
         if (LeftSubArray[i] < RightSubArray[j]) {
             arr[k++] = LeftSubArray[i++];
         } else {
@@ -60,10 +61,11 @@ int main() {
         scanf("%d", &arr[i]);
     }
     mergeSort(arr,0,n-1);
-    //printf("Posortowana tablica:\n");
+    printf("Posortowana tablica:\n");
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
-
+    printf("\n");
+    printf("Liczba prównań: %lld \n",comparisons);
     return 0;
 
 }

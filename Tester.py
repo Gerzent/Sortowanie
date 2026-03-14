@@ -1,6 +1,7 @@
 import os
 import subprocess
 import random
+import math
 
 class Config:
     compiled='compiled'
@@ -8,13 +9,14 @@ class Config:
     inputData='inputData'
     outputData='outputData'
     executionTimes='executionTimes'
+    averageExecutionTime='averageExecutionTime'
     numOfTestsForEachLength=10 #ile razy dla danego rodzaju ciagu loswego wykonać test
     numOfTestsInParallel=5
     variety =["random","growing","decreasing","Ashaped","Vshaped"]
-    sizeGrowth={"Linear":[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000],
-                "Exponential":[1000,2000,4000,16000,32000,64000,128000,256000,512000,1024000]}
-    #sizeGrowth = {"Linear": [1000, 2000, 3000, 4000],
-                  #"Exponential": [1000, 2000, 4000]}
+    #sizeGrowth={"Linear":[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000],
+                #"Exponential":[1000,2000,4000,16000,32000,64000,128000,256000,512000,1024000]}
+    sizeGrowth = {"Linear": [1000, 2000, 3000, 4000],
+                  "Exponential": [1000, 2000, 4000]}
     #sizesLinear = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000,11000,12000,13000]
     #sizesExponential=[1000,2000,4000,16000,32000,64000,128000,256000,512000,1024000]
     compiler='gcc'
@@ -34,6 +36,9 @@ if not os.path.exists(Config.executionTimes):
     os.mkdir(Config.executionTimes)
 if not os.path.exists(Config.inputData):
     os.mkdir(Config.inputData)
+if not os.path.exists("averageExecutionTime"):
+    os.mkdir("averageExecutionTime")
+
 
 def generateRandomGrowingSeries(size,starting):
     current=starting
@@ -91,6 +96,31 @@ for script in os.listdir(Config.compiled):
                         f_in[i].close()
                         f_out[i].close()
                         f_err[i].close()
+
+for script in os.listdir(Config.compiled):
+    for variety in Config.variety:
+        for growthType, sizes in Config.sizeGrowth.items():
+            for size in sizes:
+                times = []
+                for num in range(0,Config.numOfTestsForEachLength):
+                    f_time=(open(f'{Config.executionTimes}/{script}_{growthType}_{variety}_{size}_{num}.time', 'r'))
+
+                    for line in f_time:
+                        if line.startswith('real'):
+                            time = line.strip().split()[1].split('m')
+                            time = int(time[0]) * 60 + float(time[1][:-1])
+                            times.append(time)
+
+                    f_time.close()
+                averageTime=sum(times)/Config.numOfTestsForEachLength
+                f_averageTime=open(f'{Config.averageExecutionTime}/{script}_{growthType}_{variety}_{size}.time', 'w')
+                #f_averageTime.write(str(averageTime))
+                standardDevietion = math.sqrt(sum((t - averageTime) ** 2 for t in times) / Config.numOfTestsForEachLength)
+                #f_averageTime.write(str(variance))
+                f_averageTime.write(f"average={averageTime}\n")
+                f_averageTime.write(f"std_dev={standardDevietion}\n")
+                f_averageTime.close()
+
 
 
 

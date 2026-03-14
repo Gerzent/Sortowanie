@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+long long comparisons=0;
+long long swaps=0;
 void Shell(int arr[], int n) {
     int przyrost=1,kMax=1;
     while (przyrost<n) {
@@ -14,10 +16,18 @@ void Shell(int arr[], int n) {
         for (int i=przyrost;i<n;i++) {
             int key=arr[i];
             int j=i;
-            while (j >= przyrost && arr[j - przyrost]<key) {
-                arr[j]=arr[j-przyrost];
-                j-=przyrost;
+
+            while (j >= przyrost) {
+                comparisons++;
+                if (arr[j - przyrost]<key) {
+                    swaps++;
+                    arr[j]=arr[j-przyrost];
+                    j-=przyrost;
+                }else {
+                    break;
+                }
             }
+            swaps++;
             arr[j]=key;
 
         }
@@ -34,7 +44,12 @@ int main() {
         scanf("%d", &arr[i]);
     }
     Shell(arr, n);
+    printf("Posortowana tablica:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
+    printf("\n");
+    printf("Liczba prównań: %lld \n",comparisons);
+    printf("Liczba zamian: %lld \n",swaps);
+    return 0;
 }

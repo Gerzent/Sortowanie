@@ -1,17 +1,25 @@
 
 #include <stdio.h>
-
+long long comparisons=0;
+long long swaps=0;
 void restoreHeap(int arr[], int length,int initialRoot) {
     int indexOfSmallest=initialRoot;
     int left=2*indexOfSmallest+1;
     int right=2*indexOfSmallest+2;
-    if (left<length && arr[left] < arr[indexOfSmallest]) {
-        indexOfSmallest = left;
+    if (left<length ) {
+        comparisons++;
+        if (arr[left] < arr[indexOfSmallest]) {
+            indexOfSmallest = left;
+        }
     }
-    if (right<length && arr[right] < arr[indexOfSmallest]) {
-        indexOfSmallest = right;
+    if (right<length) {
+        comparisons++;
+        if (arr[right] < arr[indexOfSmallest]) {
+            indexOfSmallest = right;
+        }
     }//szukanie najmniejszego
     if (indexOfSmallest !=initialRoot) {
+        swaps++;
         int tmp = arr[initialRoot];
         arr[initialRoot] = arr[indexOfSmallest];
         arr[indexOfSmallest] = tmp;// jak był jakiś mniejszy to podmieniamy
@@ -28,6 +36,7 @@ void heapSort(int arr[], int length) {
         int tmp = arr[0];
         arr[0] = arr[i];
         arr[i] = tmp;
+        swaps++;
 
         restoreHeap(arr, i, 0);
     }
@@ -43,7 +52,12 @@ int main() {
     }
     buildHeap(arr, n);
     heapSort(arr,n);
-    //printf("Posortowana tablica:\n");
-    for (int i = 0; i < n; i++)
+    printf("Posortowana tablica:\n");
+    for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
+    }
+    printf("\n");
+    printf("Liczba prównań: %lld \n",comparisons);
+    printf("Liczba zamian: %lld",swaps);
+    return 0;
 }
