@@ -13,12 +13,9 @@ class Config:
     numOfTestsForEachLength=10 #ile razy dla danego rodzaju ciagu loswego wykonać test
     numOfTestsInParallel=5
     variety =["random","growing","decreasing","Ashaped","Vshaped"]
-    #sizeGrowth={"Linear":[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000],
-                #"Exponential":[1000,2000,4000,16000,32000,64000,128000,256000,512000,1024000]}
-    sizeGrowth = {"Linear": [1000, 2000, 3000, 4000],
-                  "Exponential": [1000, 2000, 4000]}
-    #sizesLinear = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000,11000,12000,13000]
-    #sizesExponential=[1000,2000,4000,16000,32000,64000,128000,256000,512000,1024000]
+    sizeGrowth={"Linear":[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000,11000],
+                "Exponential":[100,200,400,800,1600,3200,6400,12800,25600,51200,102400]}
+
     compiler='gcc'
 
 if not os.path.exists(Config.compiled):
