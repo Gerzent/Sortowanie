@@ -19,22 +19,23 @@ for file in os.listdir(baseOfTable):
         "average": average,
         "standardDeviation": standardDeviation
     })
-    df = pd.DataFrame(records)#
-
-    def makeTable(algorithm,typeOfGrowth):
-        sub=df[(df["algorithm"] == algorithm) & (df["typeOfGrowth"] == typeOfGrowth)]
-        table=sub.pivot(index="sizeOfTest", columns="dataVariety", values="average")
-        return table
+df = pd.DataFrame(records)#
 
 
-    if not os.path.exists("tablesForAverageTime"):
-        os.mkdir("tablesForAverageTime")
-    outputFolder="tablesForAverageTime"
-    algorithms=df["algorithm"].unique()
-    typeOfGrowths=df["typeOfGrowth"].unique()
+def makeTable(algorithm, typeOfGrowth):
+    sub = df[(df["algorithm"] == algorithm) & (df["typeOfGrowth"] == typeOfGrowth)]
+    table = sub.pivot(index="sizeOfTest", columns="dataVariety", values="average")
+    return table
 
-    for algorithm in algorithms:
-        for typeOfGrowth in typeOfGrowths:
-            table=makeTable(algorithm,typeOfGrowth)
-            title=f"{typeOfGrowth}-{algorithm}"
-            table.to_csv(f"{outputFolder}/{algorithm}_{typeOfGrowth}.csv")
+
+if not os.path.exists("tablesForAverageTime"):
+    os.mkdir("tablesForAverageTime")
+outputFolder = "tablesForAverageTime"
+algorithms = df["algorithm"].unique()
+typeOfGrowths = df["typeOfGrowth"].unique()
+
+for algorithm in algorithms:
+    for typeOfGrowth in typeOfGrowths:
+        table = makeTable(algorithm, typeOfGrowth)
+        title = f"{typeOfGrowth}-{algorithm}"
+        table.to_csv(f"{outputFolder}/{algorithm}_{typeOfGrowth}.csv")

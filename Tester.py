@@ -13,7 +13,7 @@ class Config:
     numOfTestsForEachLength=10 #ile razy dla danego rodzaju ciagu loswego wykonać test
     numOfTestsInParallel=5
     variety =["random","growing","decreasing","Ashaped","Vshaped"]
-    sizeGrowth={"Linear":[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000,11000],
+    sizeGrowth={"Linear":[1000, 4000, 7000, 10000, 13000, 16000, 19000, 22000, 25000, 28000,31000,34000],
                 "Exponential":[100,200,400,800,1600,3200,6400,12800,25600,51200,102400]}
 
     compiler='gcc'
@@ -72,27 +72,53 @@ for variety in Config.variety:
                 f.close()
 
 
+def to_wsl_path(path):
+    path = path.replace("\\", "/")
+    drive = path[0].lower()
+    return f"/mnt/{drive}{path[2:]}"
+
+wsl_cwd = to_wsl_path(os.getcwd())
+
+import time
+
 for script in os.listdir(Config.compiled):
     for variety in Config.variety:
         for growthType, sizes in Config.sizeGrowth.items():
             for size in sizes:
                 for num in range(0, Config.numOfTestsForEachLength, Config.numOfTestsInParallel):
-                    f_in, f_out, f_err, ps = [], [], [], []
+
+                    ps = []
+                    f_in, f_out, f_err = [], [], []
+                    start_times = []
+                    end_times = []
+
                     for tmp in range(num, num + Config.numOfTestsInParallel):
-                        command = ['wsl', 'time', f'{Config.compiled}/{script}']
+
+                        command = [
+                            'wsl',
+                            'bash', '-c',
+                            f'cd "{wsl_cwd}" && ./{Config.compiled}/{script}'
+                        ]
 
                         f_in.append(open(f'{Config.inputData}/{growthType}_{variety}_{size}_{tmp}.in', 'r'))
                         f_out.append(open(f'{Config.outputData}/{script}_{growthType}_{variety}_{size}_{tmp}.out', 'w'))
                         f_err.append(open(f'{Config.executionTimes}/{script}_{growthType}_{variety}_{size}_{tmp}.time', 'w'))
 
-                        p = subprocess.Popen(command, stdout=f_out[-1], stdin=f_in[-1], stderr=f_err[-1])
+                        start_times.append(time.perf_counter())
+                        p = subprocess.Popen(command, stdout=f_out[-1], stdin=f_in[-1])
                         ps.append(p)
 
-                    for i in range(Config.numOfTestsInParallel):
-                        ps[i].wait()
+                    for i, p in enumerate(ps):
+                        p.wait()
+                        end_times.append(time.perf_counter())
+
+                        elapsed = end_times[i] - start_times[i]
+                        f_err[i].write(f"real {elapsed}\n")
+
                         f_in[i].close()
                         f_out[i].close()
                         f_err[i].close()
+
 
 for script in os.listdir(Config.compiled):
     for variety in Config.variety:
@@ -104,8 +130,8 @@ for script in os.listdir(Config.compiled):
 
                     for line in f_time:
                         if line.startswith('real'):
-                            time = line.strip().split()[1].split('m')
-                            time = int(time[0]) * 60 + float(time[1][:-1])
+                            value = line.strip().split()[1]
+                            time = float(value)
                             times.append(time)
 
                     f_time.close()

@@ -18,7 +18,7 @@ void merge(int arr[],int leftIndex,int midlle,int rightIndex) {
         RightSubArray[j]=arr[midlle+j+1];
     }
     i = 0;
-    j = 0;
+    j = 0;//wypełnianie subarrays
 
     while (i < lenghtOfLeft && j < lenghtOfRight) {
         comparisons++;

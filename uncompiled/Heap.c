@@ -37,7 +37,6 @@ void heapSort(int arr[], int length) {
         arr[0] = arr[i];
         arr[i] = tmp;
         swaps++;
-
         restoreHeap(arr, i, 0);
     }
 

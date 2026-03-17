@@ -10,7 +10,7 @@ void Shell(int arr[], int n) {
     }
     if (przyrost>=n) {
         przyrost=(pow(3,kMax--)-1)/2;
-    }
+    }//uzyskiwanie maksymalnego dla nas przyrostu
     while (przyrost>0) {
 
         for (int i=przyrost;i<n;i++) {
