@@ -137,9 +137,7 @@ for script in os.listdir(Config.compiled):
                     f_time.close()
                 averageTime=sum(times)/Config.numOfTestsForEachLength
                 f_averageTime=open(f'{Config.averageExecutionTime}/{script}_{growthType}_{variety}_{size}.time', 'w')
-                #f_averageTime.write(str(averageTime))
                 standardDevietion = math.sqrt(sum((t - averageTime) ** 2 for t in times) / Config.numOfTestsForEachLength)
-                #f_averageTime.write(str(variance))
                 f_averageTime.write(f"average={averageTime}\n")
                 f_averageTime.write(f"std_dev={standardDevietion}\n")
                 f_averageTime.close()

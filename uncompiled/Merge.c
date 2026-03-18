@@ -22,7 +22,7 @@ void merge(int arr[],int leftIndex,int midlle,int rightIndex) {
 
     while (i < lenghtOfLeft && j < lenghtOfRight) {
         comparisons++;
-        if (LeftSubArray[i] < RightSubArray[j]) {
+        if (LeftSubArray[i] > RightSubArray[j]) {
             arr[k++] = LeftSubArray[i++];
         } else {
             arr[k++] = RightSubArray[j++];

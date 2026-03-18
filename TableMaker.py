@@ -19,12 +19,12 @@ for file in os.listdir(baseOfTable):
         "average": average,
         "standardDeviation": standardDeviation
     })
-df = pd.DataFrame(records)#
+df = pd.DataFrame(records)#wrzucamy do tabeli
 
 
 def makeTable(algorithm, typeOfGrowth):
-    sub = df[(df["algorithm"] == algorithm) & (df["typeOfGrowth"] == typeOfGrowth)]
-    table = sub.pivot(index="sizeOfTest", columns="dataVariety", values="average")
+    sub = df[(df["algorithm"] == algorithm) & (df["typeOfGrowth"] == typeOfGrowth)]#filtrowanie kolumn dla danego algorytmu i typu eksperymentu
+    table = sub.pivot(index="sizeOfTest", columns="dataVariety", values="average")#tabela
     return table
 
 

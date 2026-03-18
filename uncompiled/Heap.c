@@ -28,7 +28,7 @@ void restoreHeap(int arr[], int length,int initialRoot) {
 }
 void buildHeap(int arr[], int length) {
     for (int i=length/2-1;i>=0;i--) {
-        restoreHeap(arr, length, i);//dla każdego nie liścia naprawamy stos
+        restoreHeap(arr, length, i);//dla każdego nie korzenia naprawamy stos
     }
 }
 void heapSort(int arr[], int length) {
