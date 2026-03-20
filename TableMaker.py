@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
 
 baseOfTable="averageExecutionTime"
 records=[]
@@ -30,12 +31,91 @@ def makeTable(algorithm, typeOfGrowth):
 
 if not os.path.exists("tablesForAverageTime"):
     os.mkdir("tablesForAverageTime")
+if not os.path.exists("plotsAlgo"):
+    os.mkdir("plotsAlgo")
+
+if not os.path.exists("plotsData"):
+    os.mkdir("plotsData")
+
+
 outputFolder = "tablesForAverageTime"
 algorithms = df["algorithm"].unique()
 typeOfGrowths = df["typeOfGrowth"].unique()
+dataVarieties = df["dataVariety"].unique()
+
 
 for algorithm in algorithms:
     for typeOfGrowth in typeOfGrowths:
         table = makeTable(algorithm, typeOfGrowth)
         title = f"{typeOfGrowth}-{algorithm}"
         table.to_csv(f"{outputFolder}/{algorithm}_{typeOfGrowth}.csv")
+
+for algorithm in algorithms:
+    for typeOfGrowth in typeOfGrowths:
+        plt.figure(figsize=(10, 6))
+        plt.title(f"{algorithm} - {typeOfGrowth}")
+        plt.xlabel("sizeOfTest")
+        plt.ylabel("average execution time")
+        plt.grid(True)
+
+        for dataVariety in dataVarieties:
+
+            sub = df[
+                (df["algorithm"] == algorithm) &
+                (df["typeOfGrowth"] == typeOfGrowth) &
+                (df["dataVariety"] == dataVariety)
+            ].sort_values("sizeOfTest")
+
+            if sub.empty:
+                continue
+
+            # wykres z odchyleniem standardowym
+            plt.errorbar(
+                sub["sizeOfTest"],
+                sub["average"],
+                yerr=sub["standardDeviation"],
+                fmt="o-",
+                capsize=5,
+                label=dataVariety
+            )
+
+        plt.legend(title="dataVariety")
+
+        filename = f"{algorithm}_{typeOfGrowth}.png"
+        plt.savefig(os.path.join("plotsAlgo", filename))
+        plt.close()
+
+for dataVariety in dataVarieties:
+    for typeOfGrowth in typeOfGrowths:
+        plt.figure(figsize=(10, 6))
+        plt.title(f"{dataVariety} - {typeOfGrowth}")
+        plt.xlabel("sizeOfTest")
+        plt.ylabel("average execution time")
+        plt.grid(True)
+
+        for algorithm in algorithms:
+
+            sub = df[
+                (df["dataVariety"] == dataVariety) &
+                (df["typeOfGrowth"] == typeOfGrowth) &
+                (df["algorithm"] == algorithm)
+            ].sort_values("sizeOfTest")
+
+            if sub.empty:
+                continue
+
+            # wykres z odchyleniem standardowym
+            plt.errorbar(
+                sub["sizeOfTest"],
+                sub["average"],
+                yerr=sub["standardDeviation"],
+                fmt="o-",
+                capsize=5,
+                label=algorithm
+            )
+
+        plt.legend(title="algorithm")
+
+        filename = f"{dataVariety}_{typeOfGrowth}.png"
+        plt.savefig(os.path.join("plotsData", filename))
+        plt.close()
