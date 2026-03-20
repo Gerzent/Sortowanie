@@ -11,7 +11,7 @@ class Config:
     executionTimes='executionTimes'
     averageExecutionTime='averageExecutionTime'
     numOfTestsForEachLength=10 #ile razy dla danego rodzaju ciagu loswego wykonać test
-    numOfTestsInParallel=5
+    numOfTestsInParallel=1
     variety =["random","growing","decreasing","Ashaped","Vshaped"]
     sizeGrowth={"Linear":[1000, 4000, 7000, 10000, 13000, 16000, 19000, 22000, 25000, 28000,31000,34000],
                 "Exponential":[100,200,400,800,1600,3200,6400,12800,25600,51200,102400]}
