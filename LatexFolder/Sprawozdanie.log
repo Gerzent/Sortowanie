@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.8)  20 MAR 2026 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.8)  21 MAR 2026 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,28 +498,59 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 g>] [15 <./wykresy/growing_Exponential.png>] [16 <./wykresy/growing_Linear.png>
 ] [17 <./wykresy/random_Exponential.png>] [18 <./wykresy/random_Linear.png>]
 [19 <./wykresy/Vshaped_Exponential.png>] [20 <./wykresy/Vshaped_Linear.png>]
+Overfull \hbox (1.74274pt too wide) in paragraph at lines 161--162
+[]\T1/cmr/m/n/10.95 Przy wzro-±cie wy-kªad-ni-czym dªu-go-±ci sor-to-wa-nych ci
+¡-gów krzywe czasu
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 171
+.
+(C:\Users\patry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 171
+.
+
+(C:\Users\patry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+ []
+
 [21
 
-] (Sprawozdanie.aux)
+]
+Overfull \hbox (0.28835pt too wide) in paragraph at lines 202--202
+[]\T1/cmr/bx/n/12 Skalowanie li-niowe czy wy-kªad-ni-cze da-nych wej-±cio-wych?
+ 
+ []
+
+[22] (Sprawozdanie.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4060 strings out of 474486
- 65352 string characters out of 5743755
- 1928542 words of memory out of 5000000
- 26338 multiletter control sequences out of 15000+600000
- 560681 words of font info for 40 fonts, out of 8000000 for 9000
+ 4119 strings out of 474486
+ 66323 string characters out of 5743755
+ 1935542 words of memory out of 5000000
+ 26375 multiletter control sequences out of 15000+600000
+ 568099 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,236b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1095.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk>
-Output written on Sprawozdanie.pdf (21 pages, 1017595 bytes).
+ 57i,8n,65p,481b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1200.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1095.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk><C:/Users/patry/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/patry/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/patry/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/patry/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on Sprawozdanie.pdf (22 pages, 1047073 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 293 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
