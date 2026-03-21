@@ -157,4 +157,39 @@
 \clearpage
 \section{Analiza prównawcza eksperymentów.}
 
+\section{Analiza złożoności obliczeniowej.}
+\subsection{Złożoność obliczeniowa dla algorytmów sortowania według rodzaju przypadku:}
+$$
+\begin{array}{|c|c|c|c|}
+	\hline
+	\text{Algorytm} & \text{Optymistyczny} & \text{Średni} & \text{Pesymistyczny} \\
+	\hline
+	\text{Shell Sort} & O(n \log n) & O(n^{3/2}) & O(n^{2}) \\
+	\hline
+	\text{Merge Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
+	\hline
+	\text{Heap Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
+	\hline
+	\text{Quick Sort} & O(n \log n) & O(n \log n) & O(n^{2}) \\
+	\hline
+	\text{Quick Sort Iteracyjny} & O(n \log n) & O(n \log n) & O(n^{2}) \\
+	\hline
+\end{array}
+$$
+\subsection{Związek między złożonością teoretyczną, liczbą wykonanych operacji i zaobserwowanym czasem działania:}
+
+Liczba wykonywanych operacji algorytmu rośnie zgodnie z jego złożonością teoretyczną. Czas wykonania jest w przybliżeniu proporcjonalny do liczby tych operacji, jednak zależy również od czynników zewnętrznych, jak na przykład sprzęt lub obciążenie systemu. Dlatego złożoność teoretyczna nie jest obserwowana bezpośrednio, lecz można ją wnioskować z kształtu wzrostu czasu działania dla rosnących rozmiarów danych.
+
+\subsection{Analiza:}
+Czy wyniki eksperymentalne potwierdzają analizę teoretyczną?\\
+W jakich przypadkach występują odchylenia oraz z czego mogą wynikać?\\
+Z czego mogą wynikać różnice między teorią a pomiarem?\\
+
+\section{Wnioski końcowe.}
+\subsection{Najbardzie efektywny algorytm w praktyce}
+\subsection{Algorytm najbardziej wrażliwy na postać danych wejściowych}
+\subsection{Porównanie Quick Sort - rekurencyjnego i iteracyjnego}
+\subsection{Konsekwencje ustawienia pivot dla Quick Sort}
+\subsection{Skalowanie liniowe czy wykładnicze danych wejściowych?}
+
 \end{document}

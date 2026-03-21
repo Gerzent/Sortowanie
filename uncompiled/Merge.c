@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 long long comparisons=0;
 void merge(int arr[],int leftIndex,int midlle,int rightIndex) {
     int i=0,j=0,k=leftIndex;
@@ -60,12 +61,21 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+    // START TIMER
+    clock_t start = clock();
+
     mergeSort(arr,0,n-1);
+
+    // STOP TIMER
+    clock_t end = clock();
+    double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
+
     printf("Posortowana tablica:\n");
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     printf("\n");
     printf("Liczba prównań: %lld \n",comparisons);
+    printf("Czas: %.10f\n", elapsed);
     return 0;
 
 }

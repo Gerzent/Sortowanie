@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <time.h>
 long long comparisons=0;
 long long swaps=0;
 void restoreHeap(int arr[], int length,int initialRoot) {
@@ -49,8 +50,16 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+    // START TIMER
+    clock_t start = clock();
+
     buildHeap(arr, n);
     heapSort(arr,n);
+
+    // STOP TIMER
+    clock_t end = clock();
+    double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
+
     printf("Posortowana tablica:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -58,5 +67,6 @@ int main() {
     printf("\n");
     printf("Liczba prównań: %lld \n",comparisons);
     printf("Liczba zamian: %lld",swaps);
+    printf("Czas: %.10f\n", elapsed);
     return 0;
 }
