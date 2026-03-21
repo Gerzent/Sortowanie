@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
+#include <windows.h>
 long long comparisons=0;
 long long swaps=0;
 
@@ -28,7 +29,7 @@ int Partition(int A[], int p, int r) {
 }
 
 void QsortIterative(int A[], int p, int r) {
-	int stack[r-p+1];
+	int *stack=malloc(sizeof(int)*(r-p+1));
 	int top = -1;
 	stack[++top] = p;
 	stack[++top] = r;
@@ -45,24 +46,35 @@ void QsortIterative(int A[], int p, int r) {
 			stack[++top]=r;
 		}
 	}
+	free(stack);
 }
 
 int main()
 {
     int n;
     scanf("%d", &n);
-	int arr[n];
+    int *arr=malloc(sizeof(int)*n);
 	for(int i=0; i<n; i++){
 	    scanf("%d", &arr[i]);
 	}
-    // START TIMER
-    clock_t start = clock();
+    // 1. Get the frequency of the high-res timer (ticks per second)
+	LARGE_INTEGER frequency;
+	QueryPerformanceFrequency(&frequency);
 
-    QsortIterative(arr, 0, n-1);
+	// 2. Capture the start tick
+	LARGE_INTEGER start;
+	QueryPerformanceCounter(&start);
 
-    // STOP TIMER
-    clock_t end = clock();
-    double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
+	// --- YOUR CODE TO MEASURE ---
+	QsortIterative(arr, 0, n - 1);
+	// ----------------------------
+
+	// 3. Capture the end tick
+	LARGE_INTEGER end;
+	QueryPerformanceCounter(&end);
+
+	// 4. Calculate elapsed time in seconds
+	double elapsed = (double)(end.QuadPart - start.QuadPart) / frequency.QuadPart;
 	
     printf("Posortowana tablica:\n");
 	for(int i=0; i<n; i++) {
@@ -70,7 +82,8 @@ int main()
 	}
 	printf("\n");
     printf("Liczba porównań: %lld \n",comparisons);
-    printf("Liczba zamian: %lld",swaps);
+    printf("Liczba zamian: %lld\n",swaps);
     printf("Czas: %.10f\n", elapsed);
+	free(arr);
 	return 0;
 }

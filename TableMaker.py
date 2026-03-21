@@ -57,8 +57,8 @@ for algorithm in algorithms:
         plt.xlabel("sizeOfTest")
         plt.ylabel("average execution time")
         plt.grid(True)
-        if typeOfGrowth == "Exponential":
-            plt.xscale("log", base=2)
+        # if typeOfGrowth == "Exponential":
+        #     plt.xscale("log", base=2)
 
         for dataVariety in dataVarieties:
 
@@ -94,8 +94,8 @@ for dataVariety in dataVarieties:
         plt.xlabel("sizeOfTest")
         plt.ylabel("average execution time")
         plt.grid(True)
-        if typeOfGrowth == "Exponential":
-            plt.xscale("log", base=2)
+        # if typeOfGrowth == "Exponential":
+        #     plt.xscale("log", base=2)
 
         for algorithm in algorithms:
 
