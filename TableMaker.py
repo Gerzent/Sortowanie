@@ -57,8 +57,8 @@ for algorithm in algorithms:
         plt.xlabel("sizeOfTest")
         plt.ylabel("average execution time")
         plt.grid(True)
-        # if typeOfGrowth == "Exponential":
-        #     plt.xscale("log", base=2)
+        if typeOfGrowth == "Exponential":
+            plt.xscale("log", base=2)
 
         for dataVariety in dataVarieties:
 
@@ -70,6 +70,11 @@ for algorithm in algorithms:
 
             if sub.empty:
                 continue
+
+            if typeOfGrowth == "exponential":
+                xmin = sub["sizeOfTest"].min()
+                xmax = sub["sizeOfTest"].max()
+                plt.xlim(xmin, xmax)
 
             # wykres z odchyleniem standardowym
             plt.errorbar(
@@ -94,8 +99,8 @@ for dataVariety in dataVarieties:
         plt.xlabel("sizeOfTest")
         plt.ylabel("average execution time")
         plt.grid(True)
-        # if typeOfGrowth == "Exponential":
-        #     plt.xscale("log", base=2)
+        if typeOfGrowth == "Exponential":
+            plt.xscale("log", base=2)
 
         for algorithm in algorithms:
 
@@ -108,6 +113,10 @@ for dataVariety in dataVarieties:
             if sub.empty:
                 continue
 
+            if typeOfGrowth == "exponential":
+                xmin = sub["sizeOfTest"].min()
+                xmax = sub["sizeOfTest"].max()
+                plt.xlim(xmin, xmax)
             # wykres z odchyleniem standardowym
             plt.errorbar(
                 sub["sizeOfTest"],

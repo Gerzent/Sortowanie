@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-
+\usepackage{indentfirst}
 
 
 
@@ -239,18 +239,19 @@ $$
 Liczba wykonywanych operacji algorytmu rośnie zgodnie z jego złożonością teoretyczną. Czas wykonania jest w przybliżeniu proporcjonalny do liczby tych operacji, jednak zależy również od czynników zewnętrznych, jak na przykład sprzęt lub obciążenie systemu. Dlatego złożoność teoretyczna nie jest obserwowana bezpośrednio, lecz można ją wnioskować z kształtu wzrostu czasu działania dla rosnących rozmiarów danych.
 
 \subsection{Analiza:}
-Czy wyniki eksperymentalne potwierdzają analizę teoretyczną?
+Wyniki eksperymentalne w większości potwierdzają analizę teoretyczną. Algorytmy wykazywały podobny do teoretycznego wzrost czasu wraz ze wzrostem $n$. Quick Sort był najszybszy dla danych losowych, co zgadza się z teorią.
 
-W jakich przypadkach występują odchylenia oraz z czego mogą wynikać? \\
-Przykładem odchylenia jest widoczna na wykresie Heap - Linear nienaturalnie wysoka wartość krzywej random. Najpewniej jest ona spowodowana obciążeniem systemu komputera na którym był przeprowadzany eksperyment.
+Zarówno rekurencyjny jak i iteracyjny quick sort wykazują eksponencjonalny wzrost dla danych innych niż losowe. Jest to spowodowane nie optymanlnym wyborem pivota, przez co ciąg liczb jest często dzielony w stosunku $1 : n - 1$. Przy innych stragiach wyboru pivota takich jak mediana z trzech (wybieramy dwa elementy i trzeci między nimi, a następnie liczymy ich medianę), quick sort dla danych bliskich posortowaniu wykazuje złożoność obliczoniową bliską $O(n\ log\ n)$.
 
-Z czego mogą wynikać różnice między teorią a pomiarem?
+Dodatkowo wbrew złożoności obliczeniowej merge sort wykazuje wyższe czasy od shell sort. Jest to najpewniej spowodowane tym, że analiza teoretyczna opisuje zachowanie algorytmów dla bardzo dużych wartości $n$ i pomija stałe czynniki oraz szczegóły implementacyjne. W praktyce te czynniki mogą mieć wpływ na czas działania programu, szczególnie dla mniejszych rozmiarów danych, tak jak okazuje się w naszych eksperymentach. Dla rosnących rozmiarów testów wyniki shell sort okazałyby się gorsze w porównaniu z merge sort.
 
 \section{Wnioski końcowe.}
-\subsection{Najbardzie efektywny algorytm w praktyce}
-\subsection{Algorytm najbardziej wrażliwy na postać danych wejściowych}
-\subsection{Porównanie Quick Sort - rekurencyjnego i iteracyjnego}
-\subsection{Konsekwencje ustawienia pivot dla Quick Sort}
-\subsection{Skalowanie liniowe czy wykładnicze danych wejściowych?}
+Najbardziej efektywnym algorytmem w praktyce okazał się Quick Sort dla danych losowych, osiągając najkrótsze czasy działania. Najbardziej wrażliwy na postać danych wejściowych był również Quick Sort, ponieważ wybór pierwszego elementu jako pivota powodował znaczne pogorszenie wydajności dla danych uporządkowanych lub o specyficznych kształtach.
+
+Porównanie wersji rekurencyjnej i iteracyjnej Quick Sorta wykazało bardzo podobne wyniki, jednak wersja iteracyjna była nieco szybsza, co może wynikać z mniejszego narzutu związanego z wywołaniami rekurencyjnymi.
+
+Wybór pivota miał duży wpływ na wyniki – niekorzystny wybór prowadził do bardzo nierównych podziałów tablicy i pogorszenia złożoności do $O(n^2)$.
+
+Lepszym sposobem prezentacji różnic między algorytmami jest skalowanie wykładnicze, ponieważ pozwala wyraźniej zauważyć różnice w tempie wzrostu czasu działania dla dużych danych.
 
 \end{document}
