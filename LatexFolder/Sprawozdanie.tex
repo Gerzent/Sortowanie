@@ -6,252 +6,227 @@
 \usepackage{graphicx}
 \usepackage{indentfirst}
 
-
-
-
-
 \title{Sprawozdanie Algorytmy}
 \begin{document}
 	\maketitle
 	
 	\pagestyle{empty}
 	
-\begin{figure}
-	\section{Wykresy zależności czasu od liczby elementów według algorytmu.}
-	\centering
+	\begin{figure}
+		\section{Wykresy zależności czasu od liczby elementów według algorytmu.}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Merge_Exponential.png}
+			\label{fig:merge_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Merge_Linear.png}
+			\label{fig:merge_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Merge_Exponential.png}
-		\caption{Merge – Exponential}
-		\label{fig:merge_exponential}
-	\end{minipage}
-	\hfill
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Quick_Exponential.png}
+			\label{fig:quick_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Quick_Linear.png}
+			\label{fig:quick_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Merge_Linear.png}
-		\caption{Merge – Linear}
-		\label{fig:merge_linear}
-	\end{minipage}
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/QuickIterative_Exponential.png}
+			\label{fig:quickiterative_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/QuickIterative_Linear.png}
+			\label{fig:quickiterative_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-\end{figure}
-
-\begin{figure}
-	\centering
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Shell_Exponential.png}
+			\label{fig:shell_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsAlgo/Shell_Linear.png}
+			\label{fig:shell_linear}
+		\end{minipage}
+		
+	\end{figure}
+	\clearpage
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Quick_Exponential.png}
-		\caption{Quick – Exponential}
-		\label{fig:quick_exponential}
-	\end{minipage}
-	\hfill
+	\begin{figure}
+		\section{Wykresy zależności czasu od liczby elementów według algorytmu.}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/Ashaped_Exponential.png}
+			\label{fig:ashaped_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/Ashaped_Linear.png}
+			\label{fig:ashaped_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Quick_Linear.png}
-		\caption{Quick – Linear}
-		\label{fig:quick_linear}
-	\end{minipage}
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/decreasing_Exponential.png}
+			\label{fig:decreasing_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/decreasing_Linear.png}
+			\label{fig:decreasing_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-\end{figure}
-
-\begin{figure}
-	\centering
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/growing_Exponential.png}
+			\label{fig:growing_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/growing_Linear.png}
+			\label{fig:growing_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/QuickIterative_Exponential.png}
-		\caption{QuickIterative – Exponential}
-		\label{fig:quickiterative_exponential}
-	\end{minipage}
-	\hfill
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/random_Exponential.png}
+			\label{fig:random_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/random_Linear.png}
+			\label{fig:random_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/QuickIterative_Linear.png}
-		\caption{QuickIterative – Linear}
-		\label{fig:quickiterative_linear}
-	\end{minipage}
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/Vshaped_Exponential.png}
+			\label{fig:vshaped_exponential}
+		\end{minipage}
+		\hfill
+		
+		\begin{minipage}{0.48\textwidth}
+			\hspace*{-5cm}
+			\includegraphics[scale=0.7]{../plotsData/Vshaped_Linear.png}
+			\label{fig:vshaped_linear}
+		\end{minipage}
+		
+	\end{figure}
 	
-\end{figure}
-
-\begin{figure}
-	\centering
+	\pagestyle{plain}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Shell_Exponential.png}
-		\caption{Shell – Exponential}
-		\label{fig:shell_exponential}
-	\end{minipage}
-	\hfill
+	\clearpage
+	\section{Analiza prównawcza eksperymentów.}
+	\begin{enumerate}
+		\item W eksperymencie pierwszym lepiej widać małe różnicę pomiędzy algorytmami. Przez rosnące liniowo długości sortowanych ciągów, można zauważyć różnicę między algorytmami o tych samych złożonościach obliczeniowych.  
+		\item Przy wzroście wykładniczym długości sortowanych ciągów krzywe czasu średniego przybierają kształty pokrywające się z teoretyczną złożonością obliczeniową. Linie wykresów nie mają odchyleń od swojego trendu.
+		\item Wzrost wykładniczy daje wykresy z mniejszymi odchyleniami od krzywych teoretycznych. dzięki wykładniczo rosnącym długością ciągów pomiary czasu średniego odbywają się dla bardziej różniących się od siebie długości ciągu co pozwala na eliminację zakłóceń lokalnych i  w rezultacie daje wykresy dobrze pokrywające się z teoretyczną złożonością obliczeniową dla danego algorytmu i typu danych.
+		\item Dla małych długości ciągów różnicę między czasem pracy poszczególnych algorytmów nie są istotne. W znacznej większości przypadków jakiekolwiek różnicę można zaobserwować dopiero dla ciągów mających powyżej 5000 elementów. Jednym wyjątkiem jest tu Merge sort który źle radzi sobie z ciągami wejściowymi typu losowego, w tym przypadku widzimy różnicę już od początku(to jest dla n<5000).
+		\item Odchylenie standardowe ma tendencję rosnącą, którą najlepiej widać dla wykładniczo rosnących n.  Natomiast dla eksperymentu pierwszego nie da się  wskazać ciągłego trendu z uwagi na zakłócenia lokalne, które są widoczne dla mało różniących się od siebie n. Ale eksperyment drugi daje nam obraz mniej podatny na skrajne wartości lokalne i ukazuje stabilny trend rosnący odchylenia standardowego.
+	\end{enumerate}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsAlgo/Shell_Linear.png}
-		\caption{Shell – Linear}
-		\label{fig:shell_linear}
-	\end{minipage}
+	\section{Analiza złożoności obliczeniowej.}
+	\subsection{Złożoność obliczeniowa dla algorytmów sortowania według rodzaju przypadku:}
+	$$
+	\begin{array}{|c|c|c|c|}
+		\hline
+		\text{Algorytm} & \text{Optymistyczny} & \text{Średni} & \text{Pesymistyczny} \\
+		\hline
+		\text{Shell Sort} & O(n \log n) & O(n^{3/2}) & O(n^{2}) \\
+		\hline
+		\text{Merge Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
+		\hline
+		\text{Heap Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
+		\hline
+		\text{Quick Sort} & O(n \log n) & O(n \log n) & O(n^{2}) \\
+		\hline
+		\text{Quick Sort Iteracyjny} & O(n \log n) & O(n \log n) & O(n^{2}) \\
+		\hline
+	\end{array}
+	$$
 	
-\end{figure}
-\clearpage
-
-
-
-
-\begin{figure}
-	\section{Wykresy zależności czasu od liczby elementów według algorytmu.}
-	\centering
+	\subsection{Związek między złożonością teoretyczną, liczbą wykonanych operacji i zaobserwowanym czasem działania:}
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/Ashaped_Exponential.png}
-		\caption{A-shaped – Exponential}
-		\label{fig:ashaped_exponential}
-	\end{minipage}
-	\hfill
+	Liczba wykonywanych operacji algorytmu rośnie zgodnie z jego złożonością teoretyczną. Czas wykonania jest w przybliżeniu proporcjonalny do liczby tych operacji, jednak zależy również od czynników zewnętrznych, jak na przykład sprzęt lub obciążenie systemu. Dlatego złożoność teoretyczna nie jest obserwowana bezpośrednio, lecz można ją wnioskować z kształtu wzrostu czasu działania dla rosnących rozmiarów danych.
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/Ashaped_Linear.png}
-		\caption{A-shaped – Linear}
-		\label{fig:ashaped_linear}
-	\end{minipage}
+	\subsection{Analiza:}
+	Wyniki eksperymentalne w większości potwierdzają analizę teoretyczną. Algorytmy wykazywały podobny do teoretycznego wzrost czasu wraz ze wzrostem $n$. Quick Sort był najszybszy dla danych losowych, co zgadza się z teorią.
 	
-\end{figure}
-
-\begin{figure}
-	\centering
+	Zarówno rekurencyjny jak i iteracyjny quick sort wykazują eksponencjonalny wzrost dla danych innych niż losowe. Jest to spowodowane nie optymanlnym wyborem pivota, przez co ciąg liczb jest często dzielony w stosunku $1 : n - 1$. Przy innych stragiach wyboru pivota takich jak mediana z trzech (wybieramy dwa elementy i trzeci między nimi, a następnie liczymy ich medianę), quick sort dla danych bliskich posortowaniu wykazuje złożoność obliczoniową bliską $O(n\ log\ n)$.
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/decreasing_Exponential.png}
-		\caption{Decreasing – Exponential}
-		\label{fig:decreasing_exponential}
-	\end{minipage}
-	\hfill
+	Dodatkowo wbrew złożoności obliczeniowej merge sort wykazuje wyższe czasy od shell sort. Jest to najpewniej spowodowane tym, że analiza teoretyczna opisuje zachowanie algorytmów dla bardzo dużych wartości $n$ i pomija stałe czynniki oraz szczegóły implementacyjne. W praktyce te czynniki mogą mieć wpływ na czas działania programu, szczególnie dla mniejszych rozmiarów danych, tak jak okazuje się w naszych eksperymentach. Dla rosnących rozmiarów testów wyniki shell sort okazałyby się gorsze w porównaniu z merge sort.
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/decreasing_Linear.png}
-		\caption{Decreasing – Linear}
-		\label{fig:decreasing_linear}
-	\end{minipage}
+	\section{Wnioski końcowe.}
+	Najbardziej efektywnym algorytmem w praktyce okazał się Quick Sort dla danych losowych, osiągając najkrótsze czasy działania. Najbardziej wrażliwy na postać danych wejściowych był również Quick Sort, ponieważ wybór pierwszego elementu jako pivota powodował znaczne pogorszenie wydajności dla danych uporządkowanych lub o specyficznych kształtach.
 	
-\end{figure}
-
-\begin{figure}
-	\centering
+	Porównanie wersji rekurencyjnej i iteracyjnej Quick Sorta wykazało bardzo podobne wyniki, jednak wersja iteracyjna była nieco szybsza, co może wynikać z mniejszego narzutu związanego z wywołaniami rekurencyjnymi.
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/growing_Exponential.png}
-		\caption{Growing – Exponential}
-		\label{fig:growing_exponential}
-	\end{minipage}
-	\hfill
+	Wybór pivota miał duży wpływ na wyniki – niekorzystny wybór prowadził do bardzo nierównych podziałów tablicy i pogorszenia złożoności do $O(n^2)$.
 	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/growing_Linear.png}
-		\caption{Growing – Linear}
-		\label{fig:growing_linear}
-	\end{minipage}
+	Lepszym sposobem prezentacji różnic między algorytmami jest skalowanie wykładnicze, ponieważ pozwala wyraźniej zauważyć różnice w tempie wzrostu czasu działania dla dużych danych.
 	
-\end{figure}
-
-\begin{figure}
-	\centering
-	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/random_Exponential.png}
-		\caption{Random – Exponential}
-		\label{fig:random_exponential}
-	\end{minipage}
-	\hfill
-	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/random_Linear.png}
-		\caption{Random – Linear}
-		\label{fig:random_linear}
-	\end{minipage}
-	
-\end{figure}
-
-\begin{figure}
-	\centering
-	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/Vshaped_Exponential.png}
-		\caption{V-shaped – Exponential}
-		\label{fig:vshaped_exponential}
-	\end{minipage}
-	\hfill
-	
-	\begin{minipage}{0.48\textwidth}
-		\hspace*{-5cm}
-		\includegraphics[scale=0.7]{../plotsData/Vshaped_Linear.png}
-		\caption{V-shaped – Linear}
-		\label{fig:vshaped_linear}
-	\end{minipage}
-	
-\end{figure}
-\pagestyle{plain}
-
-\clearpage
-\section{Analiza prównawcza eksperymentów.}
-\begin{enumerate}
-	\item W eksperymencie pierwszym lepiej widać małe różnicę pomiędzy algorytmami. Przez rosnące liniowo długości sortowanych ciągów, można zauważyć różnicę między algorytmami o tych samych złożonościach obliczeniowych.  
-	\item Przy wzroście wykładniczym długości sortowanych ciągów krzywe czasu średniego przybierają kształty pokrywające się z teoretyczną złożonością obliczeniową. Linie wykresów nie mają odchyleń od swojego trendu.
-	\item Wzrost wykładniczy daje wykresy z mniejszymi odchyleniami od krzywych teoretycznych. dzięki wykładniczo rosnącym długością ciągów pomiary czasu średniego odbywają się dla bardziej różniących się od siebie długości ciągu co pozwala na eliminację zakłóceń lokalnych i  w rezultacie daje wykresy dobrze pokrywające się z teoretyczną złożonością obliczeniową dla danego algorytmu i typu danych.
-	\item Dla małych długości ciągów różnicę między czasem pracy poszczególnych algorytmów nie są istotne. W znacznej większości przypadków jakiekolwiek różnicę można zaobserwować dopiero dla ciągów mających powyżej 5000 elementów. Jednym wyjątkiem jest tu Merge sort który źle radzi sobie z ciągami wejściowymi typu losowego, w tym przypadku widzimy różnicę już od początku(to jest dla n<5000).
-	\item Odchylenie standardowe ma tendencję rosnącą, którą najlepiej widać dla wykładniczo rosnących n.  Natomiast dla eksperymentu pierwszego nie da się  wskazać ciągłego trendu z uwagi na zakłócenia lokalne, które są widoczne dla mało różniących się od siebie n. Ale eksperyment drugi daje nam obraz mniej podatny na skrajne wartości lokalne i ukazuje stabilny trend rosnący odchylenia standardowego.
-	
-	
-\end{enumerate}
-
-\section{Analiza złożoności obliczeniowej.}
-\subsection{Złożoność obliczeniowa dla algorytmów sortowania według rodzaju przypadku:}
-$$
-\begin{array}{|c|c|c|c|}
-	\hline
-	\text{Algorytm} & \text{Optymistyczny} & \text{Średni} & \text{Pesymistyczny} \\
-	\hline
-	\text{Shell Sort} & O(n \log n) & O(n^{3/2}) & O(n^{2}) \\
-	\hline
-	\text{Merge Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
-	\hline
-	\text{Heap Sort} & O(n \log n) & O(n \log n) & O(n \log n) \\
-	\hline
-	\text{Quick Sort} & O(n \log n) & O(n \log n) & O(n^{2}) \\
-	\hline
-	\text{Quick Sort Iteracyjny} & O(n \log n) & O(n \log n) & O(n^{2}) \\
-	\hline
-\end{array}
-$$
-\subsection{Związek między złożonością teoretyczną, liczbą wykonanych operacji i zaobserwowanym czasem działania:}
-
-Liczba wykonywanych operacji algorytmu rośnie zgodnie z jego złożonością teoretyczną. Czas wykonania jest w przybliżeniu proporcjonalny do liczby tych operacji, jednak zależy również od czynników zewnętrznych, jak na przykład sprzęt lub obciążenie systemu. Dlatego złożoność teoretyczna nie jest obserwowana bezpośrednio, lecz można ją wnioskować z kształtu wzrostu czasu działania dla rosnących rozmiarów danych.
-
-\subsection{Analiza:}
-Wyniki eksperymentalne w większości potwierdzają analizę teoretyczną. Algorytmy wykazywały podobny do teoretycznego wzrost czasu wraz ze wzrostem $n$. Quick Sort był najszybszy dla danych losowych, co zgadza się z teorią.
-
-Zarówno rekurencyjny jak i iteracyjny quick sort wykazują eksponencjonalny wzrost dla danych innych niż losowe. Jest to spowodowane nie optymanlnym wyborem pivota, przez co ciąg liczb jest często dzielony w stosunku $1 : n - 1$. Przy innych stragiach wyboru pivota takich jak mediana z trzech (wybieramy dwa elementy i trzeci między nimi, a następnie liczymy ich medianę), quick sort dla danych bliskich posortowaniu wykazuje złożoność obliczoniową bliską $O(n\ log\ n)$.
-
-Dodatkowo wbrew złożoności obliczeniowej merge sort wykazuje wyższe czasy od shell sort. Jest to najpewniej spowodowane tym, że analiza teoretyczna opisuje zachowanie algorytmów dla bardzo dużych wartości $n$ i pomija stałe czynniki oraz szczegóły implementacyjne. W praktyce te czynniki mogą mieć wpływ na czas działania programu, szczególnie dla mniejszych rozmiarów danych, tak jak okazuje się w naszych eksperymentach. Dla rosnących rozmiarów testów wyniki shell sort okazałyby się gorsze w porównaniu z merge sort.
-
-\section{Wnioski końcowe.}
-Najbardziej efektywnym algorytmem w praktyce okazał się Quick Sort dla danych losowych, osiągając najkrótsze czasy działania. Najbardziej wrażliwy na postać danych wejściowych był również Quick Sort, ponieważ wybór pierwszego elementu jako pivota powodował znaczne pogorszenie wydajności dla danych uporządkowanych lub o specyficznych kształtach.
-
-Porównanie wersji rekurencyjnej i iteracyjnej Quick Sorta wykazało bardzo podobne wyniki, jednak wersja iteracyjna była nieco szybsza, co może wynikać z mniejszego narzutu związanego z wywołaniami rekurencyjnymi.
-
-Wybór pivota miał duży wpływ na wyniki – niekorzystny wybór prowadził do bardzo nierównych podziałów tablicy i pogorszenia złożoności do $O(n^2)$.
-
-Lepszym sposobem prezentacji różnic między algorytmami jest skalowanie wykładnicze, ponieważ pozwala wyraźniej zauważyć różnice w tempie wzrostu czasu działania dla dużych danych.
-
 \end{document}
