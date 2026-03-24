@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.8)  24 MAR 2026 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.8)  24 MAR 2026 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,20 +184,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Sprawozdanie.aux)
 \openout1 = `Sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (C:\Users\patry\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -224,280 +224,303 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
 
  (C:\Users\patry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
 
 
 (C:\Users\patry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: No \author given.
-
 <../plotsAlgo/Merge_Exponential.png, id=1, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Merge_Exponential.png Graphic file (type png)
 <use ../plotsAlgo/Merge_Exponential.png>
 Package pdftex.def Info: ../plotsAlgo/Merge_Exponential.png  used on input line
- 21.
+ 27.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 20--23
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 26--29
 []|  []
  []
 
 <../plotsAlgo/Merge_Linear.png, id=3, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Merge_Linear.png Graphic file (type png)
 <use ../plotsAlgo/Merge_Linear.png>
-Package pdftex.def Info: ../plotsAlgo/Merge_Linear.png  used on input line 28.
+Package pdftex.def Info: ../plotsAlgo/Merge_Linear.png  used on input line 34.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 27--30
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 33--36
 []|  []
  []
 
 
-LaTeX Warning: Float too large for page by 136.44135pt on input line 32.
+LaTeX Warning: Float too large for page by 136.44135pt on input line 38.
 
-<../plotsAlgo/Quick_Exponential.png, id=4, 722.7pt x 433.62pt>
+<../plotsAlgo/Heap_Exponential.png, id=4, 722.7pt x 433.62pt>
+File: ../plotsAlgo/Heap_Exponential.png Graphic file (type png)
+<use ../plotsAlgo/Heap_Exponential.png>
+Package pdftex.def Info: ../plotsAlgo/Heap_Exponential.png  used on input line 
+44.
+(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
+
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 43--46
+[]|  []
+ []
+
+<../plotsAlgo/Heap_Linear.png, id=5, 722.7pt x 433.62pt>
+File: ../plotsAlgo/Heap_Linear.png Graphic file (type png)
+<use ../plotsAlgo/Heap_Linear.png>
+Package pdftex.def Info: ../plotsAlgo/Heap_Linear.png  used on input line 51.
+(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
+
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 50--53
+[]|  []
+ []
+
+
+LaTeX Warning: Float too large for page by 93.86362pt on input line 55.
+
+<../plotsAlgo/Quick_Exponential.png, id=6, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Quick_Exponential.png Graphic file (type png)
 <use ../plotsAlgo/Quick_Exponential.png>
 Package pdftex.def Info: ../plotsAlgo/Quick_Exponential.png  used on input line
- 39.
+ 61.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 38--41
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 60--63
 []|  []
  []
 
-<../plotsAlgo/Quick_Linear.png, id=5, 722.7pt x 433.62pt>
+<../plotsAlgo/Quick_Linear.png, id=7, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Quick_Linear.png Graphic file (type png)
 <use ../plotsAlgo/Quick_Linear.png>
-Package pdftex.def Info: ../plotsAlgo/Quick_Linear.png  used on input line 46.
+Package pdftex.def Info: ../plotsAlgo/Quick_Linear.png  used on input line 68.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 45--48
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 67--70
 []|  []
  []
 
 
-LaTeX Warning: Float too large for page by 93.86362pt on input line 50.
+LaTeX Warning: Float too large for page by 93.86362pt on input line 72.
 
-<../plotsAlgo/QuickIterative_Exponential.png, id=6, 722.7pt x 433.62pt>
+<../plotsAlgo/QuickIterative_Exponential.png, id=8, 722.7pt x 433.62pt>
 File: ../plotsAlgo/QuickIterative_Exponential.png Graphic file (type png)
 <use ../plotsAlgo/QuickIterative_Exponential.png>
 Package pdftex.def Info: ../plotsAlgo/QuickIterative_Exponential.png  used on i
-nput line 57.
+nput line 81.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 56--59
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 80--83
 []|  []
  []
 
-<../plotsAlgo/QuickIterative_Linear.png, id=7, 722.7pt x 433.62pt>
+<../plotsAlgo/QuickIterative_Linear.png, id=9, 722.7pt x 433.62pt>
 File: ../plotsAlgo/QuickIterative_Linear.png Graphic file (type png)
 <use ../plotsAlgo/QuickIterative_Linear.png>
 Package pdftex.def Info: ../plotsAlgo/QuickIterative_Linear.png  used on input 
-line 64.
+line 88.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 63--66
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 87--90
 []|  []
  []
 
 
-LaTeX Warning: Float too large for page by 93.86362pt on input line 68.
+LaTeX Warning: Float too large for page by 93.86362pt on input line 92.
 
-<../plotsAlgo/Shell_Exponential.png, id=8, 722.7pt x 433.62pt>
+<../plotsAlgo/Shell_Exponential.png, id=10, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Shell_Exponential.png Graphic file (type png)
 <use ../plotsAlgo/Shell_Exponential.png>
 Package pdftex.def Info: ../plotsAlgo/Shell_Exponential.png  used on input line
- 75.
+ 99.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 74--77
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 98--101
 []|  []
  []
 
-<../plotsAlgo/Shell_Linear.png, id=9, 722.7pt x 433.62pt>
+<../plotsAlgo/Shell_Linear.png, id=11, 722.7pt x 433.62pt>
 File: ../plotsAlgo/Shell_Linear.png Graphic file (type png)
 <use ../plotsAlgo/Shell_Linear.png>
-Package pdftex.def Info: ../plotsAlgo/Shell_Linear.png  used on input line 82.
+Package pdftex.def Info: ../plotsAlgo/Shell_Linear.png  used on input line 106.
+
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 81--84
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 105--108
 []|  []
  []
 
 
-LaTeX Warning: Float too large for page by 93.86362pt on input line 86.
+LaTeX Warning: Float too large for page by 93.86362pt on input line 110.
 
 [1
 
 {C:/Users/patry/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <../plots
-Algo/Merge_Exponential.png> <../plotsAlgo/Merge_Linear.png>] [3 <../plotsAlgo/Q
-uick_Exponential.png> <../plotsAlgo/Quick_Linear.png>] [4 <../plotsAlgo/QuickIt
-erative_Exponential.png> <../plotsAlgo/QuickIterative_Linear.png>] [5 <../plots
-Algo/Shell_Exponential.png> <../plotsAlgo/Shell_Linear.png>]
-<../plotsData/Ashaped_Exponential.png, id=38, 722.7pt x 433.62pt>
+Algo/Merge_Exponential.png> <../plotsAlgo/Merge_Linear.png>] [3 <../plotsAlgo/H
+eap_Exponential.png> <../plotsAlgo/Heap_Linear.png>] [4 <../plotsAlgo/Quick_Exp
+onential.png> <../plotsAlgo/Quick_Linear.png>] [5 <../plotsAlgo/QuickIterative_
+Exponential.png> <../plotsAlgo/QuickIterative_Linear.png>] [6 <../plotsAlgo/She
+ll_Exponential.png> <../plotsAlgo/Shell_Linear.png>]
+<../plotsData/Ashaped_Exponential.png, id=46, 722.7pt x 433.62pt>
 File: ../plotsData/Ashaped_Exponential.png Graphic file (type png)
 <use ../plotsData/Ashaped_Exponential.png>
 Package pdftex.def Info: ../plotsData/Ashaped_Exponential.png  used on input li
-ne 95.
+ne 119.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 94--97
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 118--121
 []|  []
  []
 
-<../plotsData/Ashaped_Linear.png, id=39, 722.7pt x 433.62pt>
+<../plotsData/Ashaped_Linear.png, id=47, 722.7pt x 433.62pt>
 File: ../plotsData/Ashaped_Linear.png Graphic file (type png)
 <use ../plotsData/Ashaped_Linear.png>
-Package pdftex.def Info: ../plotsData/Ashaped_Linear.png  used on input line 10
-2.
+Package pdftex.def Info: ../plotsData/Ashaped_Linear.png  used on input line 12
+6.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 101--104
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 125--128
 []|  []
  []
 
 
-LaTeX Warning: Float too large for page by 136.44135pt on input line 106.
+LaTeX Warning: Float too large for page by 136.44135pt on input line 130.
 
-<../plotsData/decreasing_Exponential.png, id=40, 722.7pt x 433.62pt>
+<../plotsData/decreasing_Exponential.png, id=48, 722.7pt x 433.62pt>
 File: ../plotsData/decreasing_Exponential.png Graphic file (type png)
 <use ../plotsData/decreasing_Exponential.png>
 Package pdftex.def Info: ../plotsData/decreasing_Exponential.png  used on input
- line 113.
-(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
-
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 112--115
-[]|  []
- []
-
-<../plotsData/decreasing_Linear.png, id=41, 722.7pt x 433.62pt>
-File: ../plotsData/decreasing_Linear.png Graphic file (type png)
-<use ../plotsData/decreasing_Linear.png>
-Package pdftex.def Info: ../plotsData/decreasing_Linear.png  used on input line
- 120.
-(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
-
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 119--122
-[]|  []
- []
-
-
-LaTeX Warning: Float too large for page by 93.86362pt on input line 124.
-
-<../plotsData/growing_Exponential.png, id=42, 722.7pt x 433.62pt>
-File: ../plotsData/growing_Exponential.png Graphic file (type png)
-<use ../plotsData/growing_Exponential.png>
-Package pdftex.def Info: ../plotsData/growing_Exponential.png  used on input li
-ne 131.
-(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
-
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 130--133
-[]|  []
- []
-
-<../plotsData/growing_Linear.png, id=43, 722.7pt x 433.62pt>
-File: ../plotsData/growing_Linear.png Graphic file (type png)
-<use ../plotsData/growing_Linear.png>
-Package pdftex.def Info: ../plotsData/growing_Linear.png  used on input line 13
-8.
+ line 138.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
 Overfull \hbox (193.24593pt too wide) in paragraph at lines 137--140
 []|  []
  []
 
-
-LaTeX Warning: Float too large for page by 93.86362pt on input line 142.
-
-<../plotsData/random_Exponential.png, id=44, 722.7pt x 433.62pt>
-File: ../plotsData/random_Exponential.png Graphic file (type png)
-<use ../plotsData/random_Exponential.png>
-Package pdftex.def Info: ../plotsData/random_Exponential.png  used on input lin
-e 149.
+<../plotsData/decreasing_Linear.png, id=49, 722.7pt x 433.62pt>
+File: ../plotsData/decreasing_Linear.png Graphic file (type png)
+<use ../plotsData/decreasing_Linear.png>
+Package pdftex.def Info: ../plotsData/decreasing_Linear.png  used on input line
+ 145.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 148--151
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 144--147
 []|  []
  []
 
-<../plotsData/random_Linear.png, id=45, 722.7pt x 433.62pt>
-File: ../plotsData/random_Linear.png Graphic file (type png)
-<use ../plotsData/random_Linear.png>
-Package pdftex.def Info: ../plotsData/random_Linear.png  used on input line 156
-.
+
+LaTeX Warning: Float too large for page by 93.86362pt on input line 149.
+
+<../plotsData/growing_Exponential.png, id=50, 722.7pt x 433.62pt>
+File: ../plotsData/growing_Exponential.png Graphic file (type png)
+<use ../plotsData/growing_Exponential.png>
+Package pdftex.def Info: ../plotsData/growing_Exponential.png  used on input li
+ne 156.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
 Overfull \hbox (193.24593pt too wide) in paragraph at lines 155--158
 []|  []
  []
 
-
-LaTeX Warning: Float too large for page by 93.86362pt on input line 160.
-
-<../plotsData/Vshaped_Exponential.png, id=46, 722.7pt x 433.62pt>
-File: ../plotsData/Vshaped_Exponential.png Graphic file (type png)
-<use ../plotsData/Vshaped_Exponential.png>
-Package pdftex.def Info: ../plotsData/Vshaped_Exponential.png  used on input li
-ne 167.
+<../plotsData/growing_Linear.png, id=51, 722.7pt x 433.62pt>
+File: ../plotsData/growing_Linear.png Graphic file (type png)
+<use ../plotsData/growing_Linear.png>
+Package pdftex.def Info: ../plotsData/growing_Linear.png  used on input line 16
+3.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-Overfull \hbox (193.24593pt too wide) in paragraph at lines 166--169
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 162--165
 []|  []
  []
 
-<../plotsData/Vshaped_Linear.png, id=47, 722.7pt x 433.62pt>
-File: ../plotsData/Vshaped_Linear.png Graphic file (type png)
-<use ../plotsData/Vshaped_Linear.png>
-Package pdftex.def Info: ../plotsData/Vshaped_Linear.png  used on input line 17
-4.
+
+LaTeX Warning: Float too large for page by 93.86362pt on input line 167.
+
+<../plotsData/random_Exponential.png, id=52, 722.7pt x 433.62pt>
+File: ../plotsData/random_Exponential.png Graphic file (type png)
+<use ../plotsData/random_Exponential.png>
+Package pdftex.def Info: ../plotsData/random_Exponential.png  used on input lin
+e 174.
 (pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
 Overfull \hbox (193.24593pt too wide) in paragraph at lines 173--176
 []|  []
  []
 
+<../plotsData/random_Linear.png, id=53, 722.7pt x 433.62pt>
+File: ../plotsData/random_Linear.png Graphic file (type png)
+<use ../plotsData/random_Linear.png>
+Package pdftex.def Info: ../plotsData/random_Linear.png  used on input line 181
+.
+(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
 
-LaTeX Warning: Float too large for page by 93.86362pt on input line 178.
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 180--183
+[]|  []
+ []
 
-[6 <../plotsData/Ashaped_Exponential.png> <../plotsData/Ashaped_Linear.png>]
-[7 <../plotsData/decreasing_Exponential.png> <../plotsData/decreasing_Linear.pn
-g>] [8 <../plotsData/growing_Exponential.png> <../plotsData/growing_Linear.png>
-] [9 <../plotsData/random_Exponential.png> <../plotsData/random_Linear.png>]
-[10 <../plotsData/Vshaped_Exponential.png> <../plotsData/Vshaped_Linear.png>]
-Overfull \hbox (1.74274pt too wide) in paragraph at lines 186--187
+
+LaTeX Warning: Float too large for page by 93.86362pt on input line 185.
+
+<../plotsData/Vshaped_Exponential.png, id=54, 722.7pt x 433.62pt>
+File: ../plotsData/Vshaped_Exponential.png Graphic file (type png)
+<use ../plotsData/Vshaped_Exponential.png>
+Package pdftex.def Info: ../plotsData/Vshaped_Exponential.png  used on input li
+ne 192.
+(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
+
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 191--194
+[]|  []
+ []
+
+<../plotsData/Vshaped_Linear.png, id=55, 722.7pt x 433.62pt>
+File: ../plotsData/Vshaped_Linear.png Graphic file (type png)
+<use ../plotsData/Vshaped_Linear.png>
+Package pdftex.def Info: ../plotsData/Vshaped_Linear.png  used on input line 19
+9.
+(pdftex.def)             Requested size: 505.88655pt x 303.53192pt.
+
+Overfull \hbox (193.24593pt too wide) in paragraph at lines 198--201
+[]|  []
+ []
+
+
+LaTeX Warning: Float too large for page by 93.86362pt on input line 203.
+
+[7 <../plotsData/Ashaped_Exponential.png> <../plotsData/Ashaped_Linear.png>]
+[8 <../plotsData/decreasing_Exponential.png> <../plotsData/decreasing_Linear.pn
+g>] [9 <../plotsData/growing_Exponential.png> <../plotsData/growing_Linear.png>
+] [10 <../plotsData/random_Exponential.png> <../plotsData/random_Linear.png>]
+[11 <../plotsData/Vshaped_Exponential.png> <../plotsData/Vshaped_Linear.png>]
+Overfull \hbox (1.74274pt too wide) in paragraph at lines 211--212
 []\T1/cmr/m/n/10.95 Przy wzro-±cie wy-kªad-ni-czym dªu-go-±ci sor-to-wa-nych ci
 ¡-gów krzywe czasu
  []
 
-[11
+[12
 
 
-] [12] [13] (Sprawozdanie.aux)
+] [13] [14] (Sprawozdanie.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4162 strings out of 474486
- 67912 string characters out of 5743755
+ 4178 strings out of 474486
+ 68474 string characters out of 5743755
  1936542 words of memory out of 5000000
- 26411 multiletter control sequences out of 15000+600000
+ 26427 multiletter control sequences out of 15000+600000
  570412 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,9n,65p,584b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-1200.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm1095.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+ <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+1095.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecrm1200.pk> <C:\Users\patry\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm1728.pk><C:/Users/patry/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/patry/AppData/Local/Programs
@@ -505,9 +528,9 @@ onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/patry/AppData/Local/Programs
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/patry/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/patry
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Sprawozdanie.pdf (13 pages, 910348 bytes).
+Output written on Sprawozdanie.pdf (14 pages, 1027755 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
+ 322 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

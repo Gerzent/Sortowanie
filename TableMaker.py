@@ -54,8 +54,8 @@ for algorithm in algorithms:
     for typeOfGrowth in typeOfGrowths:
         plt.figure(figsize=(10, 6))
         plt.title(f"{algorithm} - {typeOfGrowth}")
-        plt.xlabel("sizeOfTest")
-        plt.ylabel("average execution time")
+        plt.xlabel("Size Of Test")
+        plt.ylabel("Average execution time [s]")
         plt.grid(True)
         if typeOfGrowth.lower() == "exponential":
             plt.xscale("log", base=2)
